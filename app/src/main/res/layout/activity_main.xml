@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bill"
+        android:textColor="@color/colorAccent"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_bill"
+        android:ems="10"
+        android:hint="100.00"
+        android:inputType="numberDecimal"
+        android:text=""/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_marginTop="20dp"
+        android:text="Tip %"
+        android:textColor="@color/colorAccent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_tip_minus"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_weight="1"
+            android:text="-"
+            android:textColor="@color/colorPrimary"
+            android:textSize="32sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="1%"
+            android:textColor="@color/colorAccent"
+            android:textSize="32sp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_tip_plus"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_weight="1"
+            android:text="+"
+            android:textColor="@color/colorPrimary"
+            android:textSize="32sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_marginTop="20dp"
+        android:text="People"
+        android:textColor="@color/colorAccent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_people_minus"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_weight="1"
+            android:text="-"
+            android:textColor="@color/colorPrimary"
+            android:textSize="32sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_people"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/colorAccent"
+            android:textSize="32sp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_people_plus"
+            android:text="+"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="32sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/b_calculate"
+        android:layout_marginTop="20dp"
+        android:text="Calculate"
+        android:textSize="24sp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_weight="1"
+        android:textColor="@color/colorPrimary" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_marginTop="20dp"
+        android:text="Tip"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_weight="1" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_tip_output"
+        android:layout_marginTop="15dp"
+        android:text="Press Calculate"
+        android:textSize="24sp"
+        android:textColor="@color/colorAccent"
+        android:layout_weight="1" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_marginTop="20dp"
+        android:text="Total"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_weight="1" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_total_output"
+        android:layout_marginTop="15dp"
+        android:text="Press Calculate"
+        android:textSize="24sp"
+        android:textColor="@color/colorAccent"
+        android:layout_weight="1" />
+
+
+
+
+</LinearLayout>
